@@ -1,0 +1,188 @@
+
+.btn-mkh {
+    color: #fff;
+    background-color: $color-red;
+    border-color: $color-red;
+}
+.btn-mkh1 {
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: $color-red;
+    border-color: $color-red;
+}
+.btn-outline-mkh {
+    color: $color-red;
+    border-color: $color-red;
+    &:hover {
+        background-color: $color-red;
+        border-color: $color-red;
+    }
+}
+
+.dropdown {
+    .btn {
+        &:hover {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+}
+
+.btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: inherit;
+    cursor: pointer;
+    outline: 0;
+    color: $color-red;
+}
+
+a:hover, a:focus {
+    color: $color-red;
+}
+
+p, h1 {
+    margin: 0;
+}
+
+.vertical-horizontal-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.largeLoader {
+    display: inline-block;
+    border: 5px solid #f3f3f3;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    border-top: 5px solid #555;
+    border-radius: 50%;
+    border-width: 3px;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px
+  }
+
+.smallLoader {
+    display: inline-block;
+    border: 5px solid #f3f3f3;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    border-top: 5px solid #555;
+    border-radius: 50%;
+    border-width: 3px;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .tr-description {
+      max-height: 140px;
+      overflow: auto;
+  }
+
+  .table-row-clickable {
+      tr {
+        cursor: pointer;
+      }
+  }
+
+  .mkh-text {
+      color: $color-red;
+  }
+
+.bg-white {
+    background-color: #fff;
+}
+
+.pt5 {
+    padding-top: 5rem;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+    &:before {
+      content: '';
+      // use the linear-gradient for the fading effect
+      // use a solid background color for a solid bar
+      background: linear-gradient(to right, transparent, #818078, transparent);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+    }
+    &:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: black;
+  
+      padding: 0 .5em;
+      line-height: 1.5em;
+      // this is really the only tricky part, you need to specify the background color of the container element...
+      color: #818078;
+      background-color: #fcfcfa;
+    }
+  }
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #e5e5e5;
+    cursor: pointer;
+    &:before {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid #e5e5e5;
+        margin-right: .25em;
+    }
+    &:after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid #e5e5e5;
+        margin-left: .25em;
+    }
+}
+
+.show-more {
+    // overflow: hidden;
+    white-space: normal;
+    height: 100px;
+}
+
+.overflow-auto-height {
+    overflow: auto;
+    height: auto;
+}

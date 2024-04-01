@@ -1,0 +1,31 @@
+.auth-container {
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    
+    .left {
+        background: #ededed;
+        // border: 3px solid #000;
+        display: flex; 
+        justify-content: flex-end;
+        img {
+            height: 100vh; 
+            align-self: center;
+            @media #{$phone} {
+                height: 60vh; 
+            }
+        }
+    }
+    .right {
+        p:first-child a {
+            font-weight: bold;
+        }
+        p:first-child {
+            color: #6c757d;
+            text-align: right;
+            @media #{$phone} {
+                text-align: center;
+            }
+        }
+    }
+}
